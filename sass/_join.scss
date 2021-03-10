@@ -1,0 +1,90 @@
+.join {
+    background-color: darken($descriptionText, 2%);
+    padding: 3rem 0 0 7rem;
+    height: 90vh;
+
+    &__h3 {
+        & h3{
+            width: 547px;
+            margin-left: 1rem;
+            height: 106px;
+            font-size: 36px;
+            font-weight: 100;
+            letter-spacing: 1;
+            color: $white;
+            text-transform: capitalize;
+            filter: drop-shadow(0px 12px 45px rgba(65,121,248,0.35));
+        }
+    }
+
+    &__container {
+        display:grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        font-weight: 100;
+
+        &--1{
+            font-size: 21px;
+            letter-spacing: -1px;
+            // line-height: 28px;
+            color: #ffffff;
+            text-align: left;
+
+            & p{
+                width: 290px;
+                height: 280px;
+            }
+
+            & .img{
+                display:inline-block;
+                text-align: center;
+            }
+        }
+
+        &--2{
+            font-size: 21px;
+            letter-spacing: -1px;
+            // line-height: 28px;
+            color: #ffffff;
+            text-align: left;
+
+
+            & p{
+                width: 290px;
+                height: 280px;
+            }
+
+            & .img{
+                display:inline-block;
+                text-align: center;
+            }
+        }
+
+        &--3{
+            font-size: 21px;
+            letter-spacing: -1px;
+            // line-height: 28px;
+            color: #ffffff;
+            text-align: left;
+
+            & p{
+                width: 290px;
+                height: 280px;
+            }
+
+            & .img{
+                display:inline-block;
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .join {
+            width: 100%;
+        }
+    }
+}

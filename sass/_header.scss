@@ -1,0 +1,89 @@
+.header {
+    background: $white;
+    padding: 3rem 0 0 5rem;
+    width: auto;
+    height:80vh;
+    position: relative;
+
+    &__logo {
+        display: flex;
+        align-items:center;
+
+        position:absolute;
+        left: 9rem;
+
+        &__text{
+            color: $descriptionText;
+            font-weight: 400;
+        }
+    }
+
+    &__container {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+
+        &--left {
+            width: 650px;
+
+            & h1 {
+                font-size: 4.1rem;
+                letter-spacing: 1.2px;
+                color: $descriptionText;
+                font-weight: 400;
+            }
+
+            & h3{
+                width: 596px;
+                font-size: 30px;
+                margin-top: -1.8rem;
+                color: $textDark;
+                filter: drop-shadow(0px 12px 45px rgba(65,121,248,0.35));
+            }
+
+            & p{
+                margin-top: -.8rem;
+                font-size: 22px;
+                letter-spacing: 1px;
+                color:$textDark;
+                text-align: left;
+            }
+
+            &--btn {
+                padding: 1.4rem 2rem;
+                background-color: $descriptionText;
+                border: none;
+                border-radius: .3rem;
+                letter-spacing: 4px;
+                line-height: 8px;
+                color: $white;
+                text-transform: uppercase;
+                transition: background-color .3s ease-in;
+
+                &:hover,
+                &:active{
+                    cursor: pointer;
+                    background-color: darken($descriptionText,15%);
+                }
+            }
+        }
+
+        &--mid {
+            position: relative;
+            margin-top: 1rem;
+            margin-right:6rem;
+
+            &--2{
+                position:absolute;
+                bottom: 5.2rem;
+                right: -3rem;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .header {
+            width: 100%;
+        }
+    }
+}
